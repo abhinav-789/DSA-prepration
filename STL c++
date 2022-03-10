@@ -1,1 +1,24 @@
+Array stl oprations -->
+code--->
+// stl array oprations//
+#include<iostream>
+#include<array>
+using namespace std;
+int main()
+{
+    int arr[3]= {1,2,3};
+    array<int,4> a = {1,2,3,4};  //create array//
+    int size =a.size();
+
+    for(int i=0; i<4; i++)
+    {
+        cout<<a[i]<<" "<<endl;
+    }
+    cout<<"element of second index-> " <<a.at(2)<<endl;  //index//
+    cout<<" chek  array empty or not-> " <<a.empty()<<endl;
+//first and last element //
+    cout<<"  first elemnt ->" <<a.front()<<endl;
+    cout<<"  last element ->" <<a.back()<<endl;
+}
+
 
